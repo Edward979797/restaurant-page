@@ -1,3 +1,4 @@
-import pageLoad from './pageLoad';
+import pageLoad from './modules/pageLoad';
+import menuLoad from './modules/menuLoad';
 
 pageLoad();

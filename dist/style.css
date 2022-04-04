@@ -35,7 +35,8 @@ html, body {
     margin-top: 150px;
 }
 
-.desc-box {
+.desc-box,
+.menu {
     background-color: white;
     border-radius: 20px;
     box-shadow: 10px 10px indianred;
@@ -53,4 +54,32 @@ html, body {
     height: 200px;
     object-fit: scale-down;
     width: 100%;
+}
+
+.to-menu-btn,
+.to-home-btn {
+    background-color: rgb(223, 60, 60);
+    border: 1px solid white;
+    border-radius: 22px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    height: 60px;
+    letter-spacing: 2.5px;
+    margin-top: 36px;
+    text-align: center;
+    width: 150px;
+}
+
+.to-menu-btn:hover,
+.to-home-btn:hover {
+    background-color: white;
+    border: 4px dotted red;
+    color: rgb(223, 60, 60);
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+.menu {
+    height: fit-content;
 }

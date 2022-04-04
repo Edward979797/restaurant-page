@@ -1,3 +1,5 @@
+import menuLoad from './menuLoad';
+
 export default function() {
     const content = document.querySelector('#content');
 
@@ -18,8 +20,17 @@ export default function() {
     const img = document.createElement('img');
     img.src = '../ramen.jpg';
 
+    const btn = document.createElement('button');
+    btn.classList.add('to-menu-btn');
+    btn.textContent = 'Menu ->';
+    btn.addEventListener('click', () => {
+        content.innerHTML = '';
+        menuLoad();
+    });
+
     desc.appendChild(p);
     desc.appendChild(img);
+    desc.appendChild(btn);
 
     main.appendChild(desc);
 
